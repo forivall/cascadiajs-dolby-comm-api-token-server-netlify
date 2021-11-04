@@ -28,6 +28,7 @@ async function fetchToken() {
     return {
       statusCode: 200,
       headers: {
+        'Content-Type': 'application/json',
         'Access-Control-Allow-Headers': 'Content-Type',
         'Access-Control-Allow-Origin': '*', // NOTE this is to allow for CORS when testing locally
         'Access-Control-Allow-Methods': 'OPTIONS,POST,GET',
